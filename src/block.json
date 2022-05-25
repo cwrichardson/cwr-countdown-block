@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/cwr-countdown-block",
+	"version": "0.99.1",
+	"title": "Countdown Block",
+	"category": "widgets",
+	"icon": "clock",
+	"description": "It shouldn't be that hard to install a simple countdown timer on WordPress, but apparently it is, so I had to write yet another plugin.",
+	"attributes": {
+		"message": {
+			"type": "string",
+			"source": "text",
+			"selector": "div"
+		},
+		"expire_time": { "type": "string" }
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "cwr-countdown-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"script": "file:./countdown.js",
+	"style": "file:./style-index.css"
+}
